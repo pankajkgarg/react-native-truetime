@@ -22,9 +22,18 @@
   	include ':react-native-truetime'
   	project(':react-native-truetime').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-truetime/android')
   	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+3. Add maven repository to `android/build.gradle`:
+    ```
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }  // Add this line
+        }
+    }
+    ```
+4. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
       compile project(':react-native-truetime')
+      compile 'com.github.instacart.truetime-android:library-extension-rx:3.3'
   	```
 
 
