@@ -1,0 +1,25 @@
+
+{
+  "name": "react-native-truetime",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pankajkgarg/react-native-truetime.git"
+  },
+  "keywords": [
+    "react-native",
+    "true-time",
+    "ntp",
+    "server-time"
+  ],
+  "author": "Pankaj Garg",
+  "license": "",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
