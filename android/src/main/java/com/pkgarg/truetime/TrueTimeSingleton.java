@@ -19,23 +19,23 @@ import io.reactivex.schedulers.Schedulers;
  * Created by pankaj on 4/8/17.
  */
 
-public class TrueTimeRxSingleton {
-    private static final String TAG = "TrueTimeRxSingleton";
+public class TrueTimeSingleton {
+    private static final String TAG = "TrueTimeSingleton";
 
-    private static TrueTimeRxSingleton instance;
+    private static TrueTimeSingleton instance;
     //private TrueTimeRx trueTimeInstance;
 
     private boolean initialized = false;
     private String username;
     //no outer class can initialize this class's object
-    private TrueTimeRxSingleton() {}
+    private TrueTimeSingleton() {}
 
-    public static TrueTimeRxSingleton Instance()
+    public static TrueTimeSingleton Instance()
     {
         //if no instance is initialized yet then create new instance
         //else return stored instance
         if (instance == null){
-            instance = new TrueTimeRxSingleton();
+            instance = new TrueTimeSingleton();
         }
         return instance;
     }
